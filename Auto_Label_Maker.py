@@ -144,7 +144,7 @@ else:
     targetDoc.SaveAs2(f'{labels_file_path}.docx', 16)
     targetDoc.ExportAsFixedFormat(labels_file_path, exportformat:=17)
 
-    wordApp.Visible = False
+    wordApp.Visible = True
 
     # Close target file
     targetDoc.Close(False)
